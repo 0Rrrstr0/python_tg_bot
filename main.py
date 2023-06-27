@@ -29,10 +29,6 @@ def notify(chat_id):
     bot.send_message(chat_id, "Время вышло!")
 
 
-def new_message(chat_id):
-    bot.send_message(chat_id, "Запускаю таймер...")
-
-
 if __name__ == '__main__':
     load_dotenv()
     tg_token = os.environ['TG_TOKEN']
